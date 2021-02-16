@@ -6,7 +6,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("renseignez votre nom : ");
+            string Name = Console.ReadLine();
+            Console.WriteLine("renseignez votre prénom : ");
+            string FirstName = Console.ReadLine();
+            Console.WriteLine("renseignez votre age : ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Votre fiche de renseignement\nNom : {Name}\nPrénom : {FirstName}\nAge : {age}");
         }
     }
 }
